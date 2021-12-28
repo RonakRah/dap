@@ -1,11 +1,11 @@
 Package: dap
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Data analysis package (dap)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Ronak Rahmati
+Maintainer: Ronak Rahmati <ronakrahmati25@gmail.com>
+Description: This package  includes both functions that make the data analysis easier
+    and an example data (observed and simulated precipitation and temperature for Klementinum).
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
