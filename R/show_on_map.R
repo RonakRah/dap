@@ -1,6 +1,6 @@
 library(mapview)
 library(sf)
-
+library(tibble)
 
 #' show_on_map
 #' @description this function shows your places as points on map
@@ -8,12 +8,12 @@ library(sf)
 #' @param lon column name of your data frame that includes longitude values
 #' @param lat column name of your data frame that includes latitude values
 #'
-#' @return
+#' @return a map
 #' @export
 #'
 #' @examples
 show_on_map <- function(place,lon,lat){
-    points <- as_tibble(place)
+    points <- tibble::as_tibble(place)
     coordinates <-  as.character(quote(c(lon,lat)))[-1]
-    points <-st_as_sf(points,coords=c(coordinates[1],coordinates[2]),crs=4326)
+    points <-  sf::st_as_sf(points,coords=c(coordinates[1],coordinates[2]),crs=4326)
     mapview::mapview(points)}
