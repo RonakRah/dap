@@ -1,9 +1,9 @@
 
 #' b_finder
 #'
-#' @param d    the difference between 90 percent quantifies
+#' @param d    the difference between 90 percent quantiles "g2"
 #' @param l    quantile 90 percent of future scenario
-#' @param g    the difference between 60 percent quantifies
+#' @param g    the difference between 60 percent quantiles "g1"
 #' @param h    quantile 60 percent of future scenario
 #' @param c    quantile 90 percent of controlled time
 #' @param o    quantile 60 percent of controlled time
