@@ -17,7 +17,6 @@
 #'   \item mean_tem_futr.   mean future temprature of each block
 #'   \item sdt_c.   standard diviation of temprature for controll time for each block
 #'   \item sdt_f.   standard diviation of temprature for future time for each block
-#'   \item i.mean_tem_o.   mean exceedance of future data
 #'
 #'}
 "statics"

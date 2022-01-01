@@ -6,21 +6,21 @@ library(ncdf4)
 library(terra)
 library(sf)
 library(ggplot2)
+library(tidyr)
 
 
-
-#' extracter
+#' extractor
 #' @description extract chosen values from a raster
-#' @param from input that you want to extract from. default = pr_raster
-#' @param by input that you want to extract by . default = station
+#' @param from input "raster" that you want to extract from
+#' @param by input "vector" that you want to extract by
 #'
-#' @return list of numeric values
+#' @return a raster
 #' @export
 #'
 #' @examples
-extracter <- function(from,by){
+extract_my_data <- function(from,by){
 
-  pr_model = terra::extract(from,terra::vect(by))
-  pr_model
+  model = terra::extract(from,terra::vect(by))
+  model
 
 }
